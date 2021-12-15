@@ -1,0 +1,83 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Amtrak Checkout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1>Amtrak Ticket Checkout</h1>
+    </header>
+
+    <section>
+        <div class="panel panel-default">
+            <form ticket-order="form">
+                <h1>Traveler Info</h1>
+
+                <div class="form-group col-md-6">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" placeholder="John">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="middlename">Middle Initial</label>
+                    <input type="text" class="form-control" placeholder="A">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Doe">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="birthdate">Birthdate</label>
+                    <input type="text" class="form-control" placeholder="MM/DD/YYYY">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Email</label>
+                    <input class="form-control" placeholder="JohnDoe@gmail.com">
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label>Alert Options</label>
+                    <select id="Alerts" class="form-control">
+                        <option value="text">Text</option>
+                        <option value="email">Email</option>
+                    </select>
+                </div>
+
+                <h1>Payment Info</h1>
+
+                <div class="form-check col-md-3">
+                    <input id="creditCard"
+                    name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label for="CreditCard">Credit Card</label>
+                </div>
+                <div class="form-check">
+                    <input id="payPal"
+                    name="paymentMethod" type="radio" class="form-check-input" checked required>
+                    <label for="CreditCard">PayPal</label>
+                </div>
+
+                <div class="form-group">
+                    <label>Card Number</label>
+                    <input class="form-control" placeholder="0000-0000-0000-0000 Format">
+                </div>
+
+                <div class="form-group">
+                    <label>Expiration Date</label>
+                    <input class="form-control" placeholder="(mm/yy)">
+                </div>
+
+                <div class="form-group">
+                    <label>Security Code</label>
+                    <input class="form-control" placeholder="111 - 3-Digit Security Code">
+                </div>
+
+                <button type="submit" class="btn btn-primary">Checkout</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
